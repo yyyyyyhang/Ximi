@@ -12,6 +12,20 @@ a {
   text-decoration: none;
 }
 
+#shop{
+    width: 100px;
+    height: 50px;
+    background: #fafafa;
+    color: #303030;
+    z-index: 3;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: none;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
 header {
   position: relative;
 
@@ -75,12 +89,21 @@ header {
         }
       }
       #shopping {
+          position: relative;
         display: inline-block;
         float: right;
         line-height: 40px;
         font-size: 12px;
         padding: 0 15px 0 35px;
         background: url("../img/shopping_03.jpg") no-repeat 10px center #424242;
+      }
+      #shopping:hover{
+          background: #fff;
+          color: #303030;
+//        #shop{
+//            display: block;
+//            transition: 1s;
+//        }
       }
       #nav_right {
         float: right;
@@ -199,6 +222,7 @@ header {
         content: "";
       }
       input {
+          padding-left: 10px;
         width: 245px;
         height: 50px;
         border: 1px solid #b0b0b0;

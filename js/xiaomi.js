@@ -39,3 +39,18 @@ for (var i = 0; i < $(".banner_nav_show").length; i++) {
 
 
 
+$("#shopping").hover(function () {
+    $("#shop").stop().slideDown(500)
+},function () {
+    $("#shop").stop().slideUp(1000)
+
+})
+$(".seek_input input").focus(function () {
+    $(".seek_span").hide()
+})
+
+$(".seek_input input").blur(function () {
+  if ($(".seek_input input").val().trim()==false){
+      $(".seek_span").show()
+  }
+})
